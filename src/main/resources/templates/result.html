@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body data-th-object="${result}"> 
+    <div style="font-size: larger ;border: 1px; ">
+        <h1>LOVE CALCULATOR</h1>
+    </div>
+    <div class="container">
+        <table cellspacing="3" border="1px">
+            <tr>
+                <th>First Name</th>
+                <td data-th-text="*{fname}"></td>
+            </tr>
+            <tr>
+                <th>Second Name</th>
+                <td data-th-text="*{sname}"></td>
+            </tr>
+            <tr>
+                <th>Percentage</th>
+                <td data-th-text="*{percentage}"></td>
+            </tr>
+            <tr>
+                <th>Result</th>
+                <td data-th-text="*{result}"></td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <div class="back">
+        <button onclick="history.back()">Go Back</button>
+    </div>
+</body>
+</html>
